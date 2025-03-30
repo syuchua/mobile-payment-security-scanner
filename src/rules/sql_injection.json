@@ -1,0 +1,36 @@
+{
+  "version": "1.1.0",
+  "updated": "2023-09-15T10:30:00",
+  "description": "SQL注入检测规则",
+  "patterns": [
+    {
+      "id": "sqli-001",
+      "name": "基本SQL注入",
+      "regex": "'\\s*OR\\s+'1'\\s*=\\s*'1",
+      "risk": "high",
+      "description": "使用OR 1=1条件进行SQL注入"
+    },
+    {
+      "id": "sqli-002",
+      "name": "Union SQL注入",
+      "regex": "UNION\\s+ALL\\s+SELECT",
+      "risk": "high",
+      "description": "使用UNION ALL SELECT进行SQL注入"
+    },
+    {
+      "id": "sqli-003",
+      "name": "注释SQL注入",
+      "regex": "--\\s+.*$",
+      "risk": "medium",
+      "description": "使用注释截断SQL语句"
+    }
+  ],
+  "examples": [
+    "' OR '1'='1",
+    "admin' --",
+    "'; DROP TABLE users; --"
+  ],
+  "metadata": {
+    "file_info": "SQL注入规则文件"
+  }
+}

@@ -1,0 +1,672 @@
+2025-03-27 17:41:04,406 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-27 17:41:04,409 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-27 17:41:04,410 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-27 17:41:04,410 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-27 17:41:15,875 - src.core.scan_manager - INFO - [1/4] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-27 17:41:16,902 - src.core.scan_manager - INFO - [2/4] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-27 17:41:17,305 - src.core.scan_manager - INFO - [3/4] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-27 17:41:36,943 - src.core.scan_manager - INFO - [4/4] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-27 17:42:10,226 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-27 17:42:10,227 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-27 17:42:10,228 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-27 17:42:10,229 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-27 17:42:19,260 - src.core.scan_manager - INFO - [1/4] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-27 17:42:20,689 - src.core.scan_manager - INFO - [2/4] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-27 17:42:20,944 - src.core.scan_manager - INFO - [3/4] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-27 17:42:35,970 - src.core.scan_manager - INFO - [4/4] 认证安全漏洞扫描完成，发现 6 个漏洞
+2025-03-27 19:07:10,837 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-27 19:07:10,838 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-27 19:07:10,838 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-27 19:07:10,841 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-27 19:07:10,841 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-27 19:07:10,843 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:07:31,290 - src.core.scan_manager - INFO - [2/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:07:40,110 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:07:40,538 - src.core.scan_manager - INFO - [4/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-27 19:07:44,359 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:08:25,067 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-27 19:08:25,067 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-27 19:08:25,067 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-27 19:08:25,068 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-27 19:08:35,821 - src.core.scan_manager - INFO - [1/4] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-27 19:08:36,291 - src.core.scan_manager - INFO - [2/4] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:08:37,183 - src.core.scan_manager - INFO - [3/4] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-27 19:08:56,367 - src.core.scan_manager - INFO - [4/4] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-27 20:27:05,137 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-27 20:27:46,587 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-28 20:20:38,684 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-28 20:23:57,408 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-28 20:23:58,238 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-28 20:23:58,239 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-28 20:23:58,239 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-28 20:23:58,240 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-28 20:23:58,242 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-28 20:23:58,243 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:24:08,753 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-28 20:24:09,672 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:24:09,929 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:24:31,643 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:26:03,159 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-28 20:26:03,962 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-28 20:26:03,963 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-28 20:26:03,965 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-28 20:26:03,966 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-28 20:26:03,967 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-28 20:26:03,967 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:26:14,208 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-28 20:26:15,540 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:26:15,573 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:26:37,675 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:29:58,437 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-28 20:29:59,120 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-28 20:29:59,121 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-28 20:29:59,121 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-28 20:29:59,123 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-28 20:29:59,124 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-28 20:29:59,126 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:53:26,609 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 20:53:26,609 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 20:53:26,609 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 20:53:26,610 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 20:53:26,611 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 20:53:26,611 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 20:56:14,285 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 20:56:14,286 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 20:56:14,286 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 20:56:14,286 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 20:56:14,287 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 20:56:14,287 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 20:56:29,810 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 20:56:29,811 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 20:56:29,811 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 20:56:29,811 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 20:56:29,812 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 20:56:29,812 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 20:57:58,081 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 20:57:58,081 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 20:57:58,081 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 20:57:58,081 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 20:57:58,082 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 20:57:58,082 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 20:59:47,351 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 20:59:47,352 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 20:59:47,352 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 20:59:47,352 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 20:59:47,353 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 20:59:47,354 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 20:59:47,360 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:48,284 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-28 20:59:48,285 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-28 20:59:48,285 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-28 20:59:48,287 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-28 20:59:48,287 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:48,287 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-28 20:59:48,288 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:48,289 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 20:59:48,291 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:48,291 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:49,259 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:49,319 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:49,789 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:49,863 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:50,145 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:50,708 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:50,879 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:51,032 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:51,172 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:51,698 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:51,763 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:51,965 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:52,459 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:52,929 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:53,644 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:53,668 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:53,963 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:53,995 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:55,068 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:55,189 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:55,263 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:55,805 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:56,159 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:56,608 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:56,693 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:56,722 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:56,972 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:57,574 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:57,668 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:57,771 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:58,185 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:58,480 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:58,639 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:58,843 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:59,295 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:59,487 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:59,633 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 20:59:59,735 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-28 21:00:00,193 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:00,545 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:00,887 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:01,063 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:01,593 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:00:02,104 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:00:02,237 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:03,541 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:04,862 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:06,211 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:07,071 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:07,874 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:08,765 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:09,584 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:10,386 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:11,758 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:13,141 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:14,541 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:15,908 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:17,275 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:18,105 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:19,012 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:19,808 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:20,611 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:00:21,537 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:04:51,782 - MockSystem - INFO - 正在启用全局模拟模式...
+2025-03-28 21:04:51,784 - MockInterceptor - INFO - 初始化模拟网络拦截器 - 完全模拟模式
+2025-03-28 21:04:51,784 - MockSystem - INFO - 已替换requests库方法
+2025-03-28 21:04:51,784 - MockSystem - INFO - 全局模拟模式已启用，所有相关网络请求将被拦截
+2025-03-28 21:04:51,785 - MockInterceptor - INFO - 模拟请求: GET https://security-rules.example.com/api/latest
+2025-03-28 21:04:51,785 - src.rules.rule_updater - ERROR - 更新规则时出错: 'rules'
+2025-03-28 21:04:51,792 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:52,813 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-28 21:04:52,814 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-28 21:04:52,814 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-28 21:04:52,815 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:52,816 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-28 21:04:52,816 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-28 21:04:52,818 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:52,819 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:52,820 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:04:52,820 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:53,841 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:54,205 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:54,277 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:54,318 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:55,033 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:55,143 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:55,147 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:55,508 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:56,014 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:56,110 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:56,163 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:56,843 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:56,966 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:57,210 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:57,210 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:58,195 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:58,246 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:58,757 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:58,765 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:59,079 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:59,610 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:59,699 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:59,800 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:04:59,988 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:00,499 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:00,545 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:00,884 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:00,963 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:01,434 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:01,532 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:01,910 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:02,309 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:02,423 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:02,436 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:02,781 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:03,138 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:03,438 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:03,550 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-28 21:05:03,590 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:03,958 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:04,386 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:04,557 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:05:04,844 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-28 21:05:05,793 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:07,245 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:08,736 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:11,767 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:14,806 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:15,727 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:16,635 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:19,643 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:20,566 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:23,598 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:25,322 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:28,346 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:29,728 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:31,125 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:32,616 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:33,461 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:34,393 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:35,377 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:36,136 - MockSystem - INFO - 已拦截socket连接: 127.0.0.1:9910
+2025-03-28 21:05:36,897 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:50:41,287 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 14:50:42,743 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 14:50:42,744 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 14:50:42,746 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 14:50:42,747 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 14:50:42,749 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 14:50:42,750 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:50:55,491 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 14:50:55,565 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:50:59,078 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:51:45,478 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 14:51:47,575 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 14:51:47,575 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 14:51:47,575 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 14:51:47,578 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 14:51:47,578 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 14:51:47,579 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:52:06,059 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 14:52:12,184 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:52:12,199 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 14:52:57,155 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-29 15:22:32,002 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 15:22:34,081 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 15:22:34,081 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 15:22:34,081 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 15:22:34,083 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 15:22:34,084 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 15:22:34,085 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:22:52,533 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 15:22:58,823 - src.core.scan_manager - INFO - [3/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:22:58,870 - src.core.scan_manager - INFO - [4/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:23:43,570 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-29 15:28:38,775 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 15:28:40,870 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 15:28:40,871 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 15:28:40,871 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 15:28:40,873 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 15:28:40,874 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 15:28:40,875 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:28:59,319 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 15:29:05,533 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:29:05,550 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:29:50,436 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-29 15:50:23,978 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 15:50:26,037 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 15:50:26,037 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 15:50:26,038 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 15:50:26,038 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 15:50:26,039 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 15:50:26,041 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:50:44,526 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 15:50:50,724 - src.core.scan_manager - INFO - [3/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:50:50,739 - src.core.scan_manager - INFO - [4/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 15:51:35,665 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-29 16:00:54,713 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 16:00:56,786 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 16:00:56,786 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 16:00:56,787 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 16:00:56,788 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 16:00:56,790 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 16:00:56,791 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:01:15,231 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 16:01:21,430 - src.core.scan_manager - INFO - [3/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:01:21,507 - src.core.scan_manager - INFO - [4/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:01:53,901 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 7 个漏洞
+2025-03-29 16:07:15,513 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 16:07:17,580 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 16:07:17,580 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 16:07:17,581 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 16:07:17,584 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 16:07:17,584 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 16:07:17,586 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:07:36,118 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 16:07:42,368 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:07:42,384 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:08:27,161 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-29 16:11:03,556 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 16:11:05,610 - src.core.scan_manager - INFO - 开始执行 SQL注入漏洞扫描...
+2025-03-29 16:11:05,610 - src.core.scan_manager - INFO - 开始执行 XSS漏洞扫描...
+2025-03-29 16:11:05,611 - src.core.scan_manager - INFO - 开始执行 敏感信息泄露扫描...
+2025-03-29 16:11:05,613 - src.core.scan_manager - INFO - 开始执行 认证安全漏洞扫描...
+2025-03-29 16:11:05,614 - src.core.scan_manager - INFO - 开始执行 API安全漏洞扫描...
+2025-03-29 16:11:05,615 - src.core.scan_manager - INFO - [1/5] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:11:24,218 - src.core.scan_manager - INFO - [2/5] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 16:11:30,311 - src.core.scan_manager - INFO - [3/5] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:11:30,325 - src.core.scan_manager - INFO - [4/5] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:12:02,866 - src.core.scan_manager - INFO - [5/5] 认证安全漏洞扫描完成，发现 7 个漏洞
+2025-03-29 16:39:07,970 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 16:39:10,066 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 16:39:51,326 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:39:51,326 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 16:40:18,151 - src.core.scan_manager - INFO - [2/6] XSS漏洞扫描完成，发现 1 个漏洞
+2025-03-29 16:40:18,151 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 16:40:36,736 - src.core.scan_manager - INFO - [3/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 16:40:36,736 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 16:40:51,626 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 16:40:51,628 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 16:40:51,628 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 16:40:51,629 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 16:40:57,814 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 1 个漏洞
+2025-03-29 19:18:51,029 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 19:18:51,073 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 19:18:51,931 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:18:51,931 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 19:18:52,571 - src.core.scan_manager - INFO - [2/6] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:18:52,572 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 19:18:52,928 - src.core.scan_manager - INFO - [3/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 19:18:52,929 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 19:18:55,751 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 19:18:55,752 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 19:18:55,752 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:18:55,753 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 19:18:55,893 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:28:56,707 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001ED1675D720>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-29 19:28:56,916 - root - ERROR - 扫描过程中发生错误: HTTPConnectionPool(host='example-payment-system.com', port=80): Max retries exceeded with url: /api/payment (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001ED1675CF10>: Failed to resolve 'example-payment-system.com' ([Errno 11001] getaddrinfo failed)"))
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 198, in _new_conn
+    sock = connection.create_connection(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "D:\python310\lib\socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 493, in _make_request
+    conn.request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 445, in request
+    self.endheaders()
+  File "D:\python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "D:\python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "D:\python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 276, in connect
+    self.sock = self._new_conn()
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPConnection object at 0x000001ED1675CF10>: Failed to resolve 'example-payment-system.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='example-payment-system.com', port=80): Max retries exceeded with url: /api/payment (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001ED1675CF10>: Failed to resolve 'example-payment-system.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\main.py", line 177, in main
+    response = scan_manager.interceptor.intercept_request(
+  File "D:\mobile_payment_security_scanner\src\core\request_interceptor.py", line 37, in intercept_request
+    return self.session.request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 597, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='example-payment-system.com', port=80): Max retries exceeded with url: /api/payment (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x000001ED1675CF10>: Failed to resolve 'example-payment-system.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-29 19:29:35,602 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001822310D720>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-29 19:29:37,685 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 19:30:18,992 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:30:18,993 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 19:30:51,961 - src.core.scan_manager - INFO - [2/6] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:30:51,961 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 19:31:10,558 - src.core.scan_manager - INFO - [3/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 19:31:10,558 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 19:31:25,531 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 19:31:25,532 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 19:31:25,532 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:31:25,532 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 19:31:31,719 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:43:57,792 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 19:43:57,811 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 19:43:58,231 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:43:58,231 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 19:43:58,603 - src.core.scan_manager - INFO - [2/6] XSS漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:43:58,604 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 19:43:58,869 - src.core.scan_manager - INFO - [3/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 19:43:58,869 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 19:44:01,582 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 19:44:01,583 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 19:44:01,583 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:44:01,583 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 19:44:01,666 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-29 19:44:56,974 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 19:44:57,008 - root - ERROR - 扫描过程中发生错误: HTTPSConnectionPool(host='172.18.20.244', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='172.18.20.244', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\main.py", line 177, in main
+    response = scan_manager.interceptor.intercept_request(
+  File "D:\mobile_payment_security_scanner\src\core\request_interceptor.py", line 37, in intercept_request
+    return self.session.request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 595, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='172.18.20.244', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+2025-03-29 20:29:20,992 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 20:29:21,022 - root - ERROR - 扫描过程中发生错误: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+urllib3.exceptions.SSLError: [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\main.py", line 177, in main
+    response = scan_manager.interceptor.intercept_request(
+  File "D:\mobile_payment_security_scanner\src\core\request_interceptor.py", line 37, in intercept_request
+    return self.session.request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 595, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='127.0.0.1', port=5000): Max retries exceeded with url: /api/payment (Caused by SSLError(SSLError(1, '[SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:997)')))
+2025-03-29 20:39:46,360 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 20:39:46,366 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 20:39:46,851 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:39:46,852 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 20:39:46,852 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-29 20:39:46,853 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 20:39:47,059 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 20:39:47,059 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 20:39:49,762 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 20:39:49,763 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 20:39:49,764 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:39:49,764 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 20:39:49,853 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:40:14,939 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 20:40:14,944 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 20:40:15,734 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:40:15,734 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 20:40:15,734 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-29 20:40:15,736 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 20:40:16,045 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 20:40:16,046 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 20:40:18,860 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 20:40:18,861 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 20:40:18,861 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:40:18,861 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 20:40:18,987 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 1 个漏洞
+2025-03-29 20:40:31,938 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 20:40:31,944 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 20:40:32,827 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:40:32,828 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 20:40:32,828 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-29 20:40:32,829 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 20:40:33,236 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 20:40:33,236 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 20:40:36,015 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 20:40:36,016 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 20:40:36,016 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 20:40:36,017 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 20:40:36,102 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-29 22:14:16,513 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-29 22:14:16,521 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-29 22:14:16,926 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-29 22:14:16,927 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-29 22:14:16,927 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-29 22:14:16,928 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-29 22:14:17,086 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-29 22:14:17,086 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-29 22:14:19,734 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-29 22:14:19,735 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-29 22:14:19,736 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-29 22:14:19,736 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-29 22:14:19,779 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞

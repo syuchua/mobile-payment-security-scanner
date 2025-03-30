@@ -1,0 +1,105 @@
+# config/scan_config.yaml
+target_url: "https://target-app.example.com"
+parallel_scan: true
+
+scanners:
+  sql_injection:
+    enabled: true
+    timeout: 60
+    injection_strings:
+      - "'"
+      - "\""
+      - "OR 1=1"
+      - "' OR '1'='1"
+      - "; DROP TABLE users; --"
+
+  xss:
+    enabled: true
+    timeout: 45
+    test_payloads:
+      - "<script>alert(1)</script>"
+      - "<img src=x onerror=alert(1)>"
+      - "<svg onload=alert(1)>"
+
+  sensitive_data:
+    enabled: true
+    patterns:
+      - "password"
+      - "credit_card"
+      - "ssn"
+      - "api_key"
+      - "access_token"
+
+  authentication:
+    enabled: true
+    endpoints:
+      - "/login"
+      - "/api/auth"
+      - "/user/session"
+    test_weak_passwords: true
+
+  # 添加新的扫描器配置
+  api_security:
+    enabled: true
+    timeout: 40
+    test_endpoints:
+      - "/api/v1/users"
+      - "/api/v1/payments"
+    check_methods:
+      - "GET"
+      - "POST"
+      - "PUT"
+      - "DELETE"
+    check_rate_limiting: true
+    check_auth_bypass: true
+
+reporting:
+  export_formats:
+    - "pdf"
+    - "html"
+  include_charts: true
+  report_dir: "security_reports"
+
+general:
+  request_timeout: 15
+  max_retries: 3
+  user_agent: "SecurityScanner/1.0"
+
+# 安全监控配置
+security_monitoring:
+  enable_logging: true
+  log_level: "INFO"
+  ip_threshold: 5
+  alert_on_suspicious: true
+  # 可疑IP黑名单
+  blacklist:
+    - "192.168.1.100"
+    - "10.0.0.5"
+  # 记录事件类型
+  monitored_events:
+    - "authentication_failure"
+    - "input_validation_failure"
+    - "vulnerability_detected"
+
+# 规则更新配置
+rule_updates:
+  enable_auto_update: true
+  update_interval: 86400  # 每天更新一次，单位：秒
+  update_url: "https://security-rules.example.com/api/latest"
+  rule_base_dir: "rules"
+  alert_on_new_rules: true
+
+# 添加到现有配置文件
+version_specific:
+  basic:  # 基础版 (5000)
+    payloads:
+      xss: ["<script>alert(1)</script>", "<img src=x onerror=alert(1)>"]
+      sql: ["' OR 1=1--", "admin' --"]
+  secure:  # 安全版 (5001)
+    payloads:
+      xss: ["<object data='data:text/html,<script>alert(1)</script>'>"]
+      sql: ["'; SELECT * FROM users--"]
+  enhanced:  # 增强版 (5002)
+    payloads:
+      xss: ["<svg onload=alert(1)>"]
+      sql: ["'); DROP TABLE users--"]
