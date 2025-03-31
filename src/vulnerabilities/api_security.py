@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/vulnerabilities/api_security.py
 from typing import List
 from src.core.vulnerability_scanner import VulnerabilityResult

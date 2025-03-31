@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/core/mock_system.py
 import logging
 import sys

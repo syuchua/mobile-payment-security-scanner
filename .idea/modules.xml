@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mobile_payment_security_scanner.iml" filepath="$PROJECT_DIR$/.idea/mobile_payment_security_scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../payment_simulation/.idea/payment_simulation.iml" filepath="$PROJECT_DIR$/../payment_simulation/.idea/payment_simulation.iml" />
     </modules>
   </component>
 </project>

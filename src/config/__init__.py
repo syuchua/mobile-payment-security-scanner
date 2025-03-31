@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # 向 src/config/__init__.py 中添加以下代码
 
 def get_system_version(url):

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/core/mock_interceptor.py
 import logging
 from datetime import datetime

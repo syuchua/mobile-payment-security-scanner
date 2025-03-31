@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/vulnerabilities/sensitive_data.py
 from typing import List
 import re

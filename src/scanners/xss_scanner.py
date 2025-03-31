@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/scanners/xss_scanner.py - 增加XSS检测逻辑
 def scan_for_xss(self, url):
     test_payloads = ["<script>alert(1)</script>", "javascript:alert(1)"]

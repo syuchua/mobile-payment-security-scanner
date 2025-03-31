@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/core/scanner_strategy.py
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any

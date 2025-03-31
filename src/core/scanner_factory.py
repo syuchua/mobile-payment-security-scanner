@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/core/scanner_factory.py
 from typing import Dict, Type
 from src.core.scanner_strategy import ScannerStrategy

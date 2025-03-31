@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/core/network_interceptor.py
 import requests
 from typing import Dict, Any, Optional

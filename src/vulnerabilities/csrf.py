@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from typing import List
 from src.core.vulnerability_scanner import VulnerabilityResult
 from src.core.scanner_strategy import ScannerStrategy

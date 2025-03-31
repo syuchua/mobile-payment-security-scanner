@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/protection/security_rules.py
 import re
 from typing import Dict, List, Pattern, Any

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import requests
 from typing import Dict, Any, Optional
 
@@ -12,6 +13,7 @@ class RequestInterceptor:
             base_url: 目标系统的基础URL
         """
         self.base_url = base_url
+        self.target_url = base_url
         self.session = requests.Session()
 
     def intercept_request(self, method: str, endpoint: str,

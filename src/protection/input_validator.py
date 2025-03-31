@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/protection/input_validator.py
 import re
 import logging

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/rules/rule_updater.py
 import os
 import json

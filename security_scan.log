@@ -670,3 +670,412 @@ AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
 2025-03-29 22:14:19,736 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
 2025-03-29 22:14:19,736 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
 2025-03-29 22:14:19,779 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:44:46,267 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000025F90843A00>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-30 21:44:46,274 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-30 21:45:12,172 - src.core.scan_manager - ERROR - 运行 SQL注入漏洞扫描 时出错: 'SQLInjectionScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 1093, in _validate_conn
+    conn.connect()
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 741, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connection.py", line 920, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\ssl_.py", line 460, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\ssl_.py", line 504, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "D:\python310\lib\ssl.py", line 513, in wrap_socket
+    return self.sslsocket_class._create(
+  File "D:\python310\lib\ssl.py", line 1071, in _create
+    self.do_handshake()
+  File "D:\python310\lib\ssl.py", line 1342, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:980: The handshake operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 564, in send
+    resp = conn.urlopen(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='example.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\sql_injection.py", line 42, in scan
+    response = self.interceptor.intercept_request(
+  File "D:\mobile_payment_security_scanner\src\core\request_interceptor.py", line 37, in intercept_request
+    return self.session.request(
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\mobile_payment_security_scanner\venv\lib\site-packages\requests\adapters.py", line 610, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='example.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\sql_injection.py", line 77, in scan
+    self.logger.error(f"扫描SQL注入时出错 (端点: {endpoint}): {e}")
+AttributeError: 'SQLInjectionScanner' object has no attribute 'logger'
+2025-03-30 21:45:12,182 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-30 21:45:12,182 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-30 21:45:12,183 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-30 21:45:22,279 - src.core.scan_manager - INFO - [1/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-30 21:45:22,279 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-30 21:45:34,675 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-30 21:45:34,676 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-30 21:45:34,676 - src.core.scan_manager - INFO - [2/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:45:34,676 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-30 21:45:40,669 - src.core.scan_manager - INFO - [3/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:46:59,420 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001756FC0B760>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-30 21:46:59,425 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-30 21:46:59,610 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:46:59,610 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-30 21:46:59,610 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-30 21:46:59,612 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-30 21:46:59,702 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-30 21:46:59,702 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-30 21:47:02,314 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-30 21:47:02,315 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-30 21:47:02,315 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:47:02,315 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-30 21:47:02,333 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:47:41,950 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x0000014BFF68B760>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-30 21:47:41,955 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-30 21:47:42,643 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:47:42,643 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-30 21:47:42,643 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-30 21:47:42,645 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-30 21:47:42,941 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-30 21:47:42,942 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-30 21:47:45,671 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-30 21:47:45,672 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-30 21:47:45,672 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:47:45,672 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-30 21:47:45,736 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 1 个漏洞
+2025-03-30 21:48:17,711 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x00000155A528B760>: Failed to resolve 'security-rules.example.com' ([Errno 11001] getaddrinfo failed)"))
+2025-03-30 21:48:17,717 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-30 21:48:18,375 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:48:18,375 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-30 21:48:18,375 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-30 21:48:18,376 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-30 21:48:18,687 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-30 21:48:18,688 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-30 21:48:21,412 - src.core.scan_manager - ERROR - 运行 认证安全漏洞扫描 时出错: 'RequestInterceptor' object has no attribute 'target_url'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 36, in scan
+    if not self._check_secure_transmission(endpoint):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\authentication.py", line 128, in _check_secure_transmission
+    return self.interceptor.target_url.startswith("https://")
+AttributeError: 'RequestInterceptor' object has no attribute 'target_url'
+2025-03-30 21:48:21,413 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-30 21:48:21,413 - src.core.scan_manager - INFO - [3/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-30 21:48:21,413 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-30 21:48:21,517 - src.core.scan_manager - INFO - [4/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 10:40:41,187 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 10:40:41,196 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 10:40:59,870 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 10:40:59,870 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 10:40:59,870 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 43, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 56, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 70, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 10:40:59,871 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 10:41:05,586 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 10:41:05,586 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 10:41:45,649 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 10:41:45,649 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 10:41:45,649 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 10:41:45,649 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 10:41:48,800 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:11:57,078 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLError(1, '[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:997)')))
+2025-03-31 11:11:57,084 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:11:57,361 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:11:57,361 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:11:57,362 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:11:57,363 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:11:57,487 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:11:57,488 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:12:05,490 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-31 11:12:05,490 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:12:05,491 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:12:05,491 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:12:05,503 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:16:00,391 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:16:00,395 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:16:00,651 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:16:00,651 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:16:00,651 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:16:00,653 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:16:00,764 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:16:00,765 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:16:08,831 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-31 11:16:08,831 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:16:08,831 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:16:08,832 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:16:08,887 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:17:39,541 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:17:39,547 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:17:40,189 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:17:40,190 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:17:40,190 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:17:40,192 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:17:40,467 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:17:40,468 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:17:48,883 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 4 个漏洞
+2025-03-31 11:17:48,883 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:17:48,884 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:17:48,884 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:17:48,976 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 1 个漏洞
+2025-03-31 11:19:09,201 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:19:09,208 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:19:09,877 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:19:09,877 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:19:09,877 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:19:09,878 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:19:10,170 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:19:10,170 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:19:18,833 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:19:18,833 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:19:18,833 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:19:18,833 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:19:18,938 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:24:02,601 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:24:02,606 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:24:02,920 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:24:02,921 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:24:02,921 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:24:02,922 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:24:03,031 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:24:03,031 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:24:11,067 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 3 个漏洞
+2025-03-31 11:24:11,067 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:24:11,068 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:24:11,068 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:24:11,101 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:25:18,671 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:25:18,676 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:25:19,343 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:25:19,343 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:25:19,343 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:25:19,345 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:25:19,641 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:25:19,642 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:25:28,019 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 4 个漏洞
+2025-03-31 11:25:28,020 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:25:28,020 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:25:28,020 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:25:28,131 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 1 个漏洞
+2025-03-31 11:26:22,747 - src.rules.rule_updater - ERROR - 检查规则更新时出错: HTTPSConnectionPool(host='security-rules.example.com', port=443): Max retries exceeded with url: /api/latest (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-03-31 11:26:22,755 - src.core.scan_manager - INFO - 开始执行SQL注入漏洞扫描...
+2025-03-31 11:26:23,495 - src.core.scan_manager - INFO - [1/6] SQL注入漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:26:23,496 - src.core.scan_manager - INFO - 开始执行XSS漏洞扫描...
+2025-03-31 11:26:23,496 - src.core.scan_manager - ERROR - 运行 XSS漏洞扫描 时出错: 'XSSScanner' object has no attribute 'logger'
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 44, in scan
+    response = self.interceptor.intercept_request(
+TypeError: RequestInterceptor.intercept_request() missing 1 required positional argument: 'endpoint'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\mobile_payment_security_scanner\src\core\scan_manager.py", line 57, in run_all_scanners
+    vulnerabilities = scanner.scan()
+  File "D:\mobile_payment_security_scanner\src\vulnerabilities\xss.py", line 71, in scan
+    self.logger.error(f"扫描XSS时出错 (端点: {endpoint}): {e}")
+AttributeError: 'XSSScanner' object has no attribute 'logger'
+2025-03-31 11:26:23,498 - src.core.scan_manager - INFO - 开始执行敏感信息泄露扫描...
+2025-03-31 11:26:23,774 - src.core.scan_manager - INFO - [2/6] 敏感信息泄露扫描完成，发现 0 个漏洞
+2025-03-31 11:26:23,775 - src.core.scan_manager - INFO - 开始执行认证安全漏洞扫描...
+2025-03-31 11:26:32,316 - src.core.scan_manager - INFO - [3/6] 认证安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:26:32,317 - src.core.scan_manager - INFO - 开始执行API安全漏洞扫描...
+2025-03-31 11:26:32,317 - src.core.scan_manager - INFO - [4/6] API安全漏洞扫描完成，发现 0 个漏洞
+2025-03-31 11:26:32,317 - src.core.scan_manager - INFO - 开始执行CSRF漏洞扫描...
+2025-03-31 11:26:32,410 - src.core.scan_manager - INFO - [5/6] CSRF漏洞扫描完成，发现 0 个漏洞

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/scanners/csrf_scanner.py - 增加CSRF检测逻辑
 def scan_for_csrf(self, url):
     vulnerable_endpoints = []

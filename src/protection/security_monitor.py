@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # src/protection/security_monitor.py
 import logging
 import time

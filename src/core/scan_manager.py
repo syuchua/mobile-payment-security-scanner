@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from typing import List
 import logging
 from src.core.vulnerability_scanner import VulnerabilityResult
